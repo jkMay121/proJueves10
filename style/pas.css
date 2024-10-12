@@ -1,0 +1,184 @@
+.contenedor{
+    padding: 5px;
+    display: grid;
+    background-image: url(../img/11.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-areas: "header header header header"
+                            "nav nav nav nav" 
+                            "uno dos tres cuatro"
+                            "comen comen comen comen"
+                            "ads1 ads2 ads3 ads4"
+                            "ads5 ads6 ads7 ads8"
+                            "ads9 ads10 ads11 ads12"
+                            "come come come come"
+                            "footer footer footer footer";
+text-align: center;
+}
+.contenedor .header{ 
+    color: tomato;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: header;  
+}
+.contenedor .nav{
+    grid-area: nav;
+}
+.contenedor .cuatro{
+    grid-area: cuatro;
+}
+.contenedor .cuatro .d-flex{
+    width: 300px;
+}
+.contenedor .cuatro .d-flex .btn{
+    color: rgba(226, 18, 18, 0.87);
+    font-size: 1rem;
+}
+.contenedor .cuatro .d-flex .btn:hover{
+    background-color: wheat;
+
+}
+
+.contenedor .comentarios{
+    grid-area: comen;
+}
+
+.contenedor .ads1{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads1;
+}
+
+.contenedor .ads2{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads2;
+}
+
+.contenedor .ads3{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads3;
+}
+
+.contenedor .ads4{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads4;
+}
+
+.contenedor .ads5{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads5;
+}
+
+.contenedor .ads6{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads6;
+}
+
+
+.contenedor .ads7{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads7;
+}
+
+.contenedor .ads8{
+    
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads8;
+}
+
+
+.contenedor .ads9{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads9;
+}
+.contenedor .ads10{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads10;
+}
+
+.contenedor .ads11{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads11;
+}
+.contenedor .ads12{
+
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    grid-area: ads12;
+}
+
+
+
+
+
+
+.contenedor .adsp{
+    grid-area: come;
+}
+
+.contenedor .footer{
+    grid-area: footer;
+}
+
+@media screen and (max-width:600px) {
+    .contenedor{
+        grid-template-areas: "header header header header"
+                             "nav nav nav nav"
+                             "contenido contenido contenido contenido"
+                             "cuatro cuatro cuatro cuatro"
+                             "comen comen comen comen"
+                             "ads1 ads1 ads1 ads1"
+                            "ads2 ads2 ads2 ads2"
+                            "ads3 ads3 ads3 ads3"
+                            "ads4 ads4 ads4 ads4"
+                            "ads5 ads5 ads5 ads5"
+                            "ads6 ads6 ads6 ads6"
+                            "ads7 ads7 ads7 ads7"
+                            "ads8 ads8 ads8 ads8"
+                            "ads9 ads9 ads9 ads9"
+                            "ads10 ads10 ads10 ads10"
+                            "ads11 ads11 ads11 ads11"
+                            "ads12 ads12 ads12 ads12"
+                            "come come come come"
+                            "footer footer footer footer"
+                            
+                            
+                            
+                            
+                            
+                            
+        ;
+    }
+}

@@ -1,0 +1,70 @@
+.contenedor{
+    padding: 5px;
+    display: grid;
+    background-image: url(../img/11.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                            "nav nav nav"
+                            "ads1 ads2 ads3"
+                            "come come come"
+                            "footer footer footer";
+text-align: center;
+}
+.contenedor .header{ 
+    color: tomato;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: header;  
+}
+.contenedor .nav{
+
+    grid-area: nav;
+}
+.contenedor .ads1{
+    padding: 30px;
+    grid-area: ads1;
+}
+
+.contenedor .ads1 .card .card-body{
+    background-color: rgb(229, 255, 0);
+    margin: 20px;
+}
+
+.contenedor .ads2{
+    padding: 30px;
+    grid-area: ads2;
+}
+.contenedor .ads2 .card .card-body{
+    background-color: rgb(255, 187, 0);
+    margin: 20px;
+}
+.contenedor .ads3{
+    padding: 30px;
+    grid-area: ads3;
+}
+.contenedor .ads3 .card .card-body{
+    background-color: rgb(30, 255, 0);
+    margin: 20px;
+}
+
+.contenedor .ads4{
+    grid-area: come;
+}
+.contenedor .footer{
+    background-color: violet;
+    grid-area: footer;
+}
+@media screen and (max-width:768px) {
+    .contenedor{
+        grid-template-areas: "header header"
+                             "nav nav "
+                             "ads1 ads1 "
+                            "ads2 ads2"
+                            "ads3 ads3"
+                            "come come"
+                             "footer footer "   
+        ;
+    }
+}
